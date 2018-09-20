@@ -25,3 +25,25 @@ function BotaoDireito() {
 
     return false;
 }
+
+// Eventos Teclado 
+
+function ApertouTecla(event) {
+
+    console.log("Apertou tecla:" + event.keyCode );
+}
+
+function ApertouTecla2(event) {
+
+ if(event.shiftKey == true && event.keyCode == 69 ) {
+    console.log("Você apertou shift + E");
+ }
+
+
+}
+
+function ApertouTecla3(event) {
+
+    console.log("Apertou tecla:" + event.keyCode );
+}
+
