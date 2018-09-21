@@ -47,3 +47,24 @@ function ApertouTecla3(event) {
     console.log("Apertou tecla:" + event.keyCode );
 }
 
+//Eventos Pagina
+
+function Carregou(){
+
+    alert("Pagina carregada");
+}
+
+//Eventos Formulario
+
+function selecionouOpcao(objeto){
+
+    console.log("Selecionou opção " + objeto.value);
+}
+
+function validaCampo(valor){
+
+    if(valor.value == "lucas"){
+        console.log("tudo certo");
+    }
+    
+}

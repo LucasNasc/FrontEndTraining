@@ -10,15 +10,28 @@
     <body>
                 <!-- -->
 
-        <form>
+        <form onsubmit="Confirmou()">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email"  onkeydown= "ApertouTecla(event)"
+                <!--                 onkeydown= "ApertouTecla(event)"
                                      onkeyup= "ApertouTecla2(event)"
-                                     onkeypress = "ApertouTecla3(event)"   
+                                     onkeypress = "ApertouTecla3(event)" -->
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email"  onfocus="SelecionouForm()"
+                                     onblur="validaCampo(this)"
                 class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 
             </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" onchange="selecionouOpcao(this)" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
         </form>    
 
         <button onmousedown ="ApertouMouse()" 
